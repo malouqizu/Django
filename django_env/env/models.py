@@ -18,10 +18,10 @@ class ResourceBase(models.Model):
 
 # 创建table：resource_jira
 class ResourceJira(models.Model):
-    jira_id = models.BigIntegerField(max_length=11)
-    jira_status = models.SmallIntegerField(max_length=1)
+    jira_id = models.BigIntegerField()
+    jira_status = models.SmallIntegerField()
     sour_type = models.CharField(max_length=15)
-    resource_id = models.PositiveSmallIntegerField(max_length=11)
+    resource_id = models.PositiveSmallIntegerField()
     submit_data = models.CharField(max_length=2048)
     result_data = models.CharField(max_length=2048)
     creator = models.CharField(max_length=24)
@@ -34,7 +34,7 @@ class ResourceJira(models.Model):
 
 # 创建table：resource_env_base
 class ResourceEnvBase(models.Model):
-    base_id = models.PositiveSmallIntegerField(max_length=11)
+    base_id = models.PositiveSmallIntegerField()
     env = models.CharField(max_length=20)
     ip = models.CharField(max_length=16)
     creator = models.CharField(max_length=24)
@@ -52,13 +52,13 @@ class ResoureceModuleArchive(models.Model):
     resource_host = models.CharField(max_length=20)
     resource_http_port = models.CharField(max_length=8)
     module_domain = models.CharField(max_length=48)
-    https = models.PositiveSmallIntegerField(max_length=1)
-    nginx = models.PositiveSmallIntegerField(max_length=1)
-    namespace = models.PositiveSmallIntegerField(max_length=1)
-    extend_port_num = models.PositiveSmallIntegerField(max_length=1)
+    https = models.PositiveSmallIntegerField()
+    nginx = models.PositiveSmallIntegerField()
+    namespace = models.PositiveSmallIntegerField()
+    extend_port_num = models.PositiveSmallIntegerField()
     extend_data = models.CharField(max_length=1024)
     custom = models.CharField(max_length=2048)
-    status = models.PositiveSmallIntegerField(max_length=1)
+    status = models.PositiveSmallIntegerField()
 
     def __unicode__(self):
         return self.archive_id
