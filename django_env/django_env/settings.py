@@ -91,7 +91,7 @@ DATABASES = {
 
 LANGUAGE_CODE = 'zh-CN'
 
-TIME_ZONE = 'Asia/Beijing'
+TIME_ZONE = 'Asia/Shanghai'
 
 USE_I18N = True
 
