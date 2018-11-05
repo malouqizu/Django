@@ -8,7 +8,7 @@ class ResourceBase(models.Model):
     status = models.PositiveSmallIntegerField()
     creator = models.CharField(max_length=24)
     is_valid = models.BooleanField(default=1)
-    
+
     def __unicode__(self):
         return self.base_type
 
