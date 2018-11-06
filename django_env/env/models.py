@@ -1,8 +1,3 @@
-# -*- coding: utf-8 -*-
-# Create your models here.
-# 创建table：resource_base
-
-
 # This is an auto-generated Django model module.
 # You'll have to do the following manually to clean this up:
 #   * Rearrange models' order
@@ -16,13 +11,14 @@ from __future__ import unicode_literals
 
 from django.db import models
 
+
 class DjangoMigrations(models.Model):
     app = models.CharField(max_length=255)
     name = models.CharField(max_length=255)
     applied = models.DateTimeField()
 
     class Meta:
-        # managed = False
+        managed = False
         db_table = 'django_migrations'
 
 
@@ -34,7 +30,7 @@ class ResourceBase(models.Model):
     is_valid = models.IntegerField()
 
     class Meta:
-        # managed = False
+        managed = False
         db_table = 'resource_base'
 
 
@@ -45,7 +41,7 @@ class ResourceEnvBase(models.Model):
     creator = models.CharField(max_length=24)
 
     class Meta:
-        # managed = False
+        managed = False
         db_table = 'resource_env_base'
         unique_together = (('base_id', 'env'),)
 
@@ -53,18 +49,18 @@ class ResourceEnvBase(models.Model):
 class ResourceJira(models.Model):
     jira_id = models.IntegerField(unique=True)
     jira_status = models.IntegerField()
-    type = models.CharField(max_length=15)
+    res_type = models.CharField(max_length=15)
     resource_id = models.IntegerField()
     submit_data = models.CharField(max_length=2048)
     result_data = models.CharField(max_length=2048)
     creator = models.CharField(max_length=24)
 
     class Meta:
-        # managed = False
+        managed = False
         db_table = 'resource_jira'
 
 
-class ResoureceModuleArchive(models.Model):
+class ResourceModuleArchive(models.Model):
     archive_id = models.CharField(max_length=48)
     ip_flag = models.CharField(max_length=16)
     resource_host = models.CharField(max_length=20)
@@ -79,6 +75,6 @@ class ResoureceModuleArchive(models.Model):
     status = models.IntegerField()
 
     class Meta:
-        # managed = False
-        db_table = 'resourece_module_archive'
+        managed = False
+        db_table = 'resource_module_archive'
         unique_together = (('archive_id', 'ip_flag'),)
