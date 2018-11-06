@@ -6,9 +6,9 @@ from django.db import models
 class ResourceBase(models.Model):
     base_type = models.CharField(max_length=15)
     resource_data = models.CharField(max_length=1024)
-    status = models.IntegerField(max_length=1)
+    status = models.IntegerField()
     creator = models.CharField(max_length=24)
-    is_valid = models.IntegerField(max_length=1, default=1)
+    is_valid = models.IntegerField(default=1)
 
     def __unicode__(self):
         return self.base_type
@@ -18,10 +18,10 @@ class ResourceBase(models.Model):
 
 # 创建table：resource_jira
 class ResourceJira(models.Model):
-    jira_id = models.IntegerField(max_length=11)
-    jira_status = models.IntegerField(max_length=1)
+    jira_id = models.IntegerField()
+    jira_status = models.IntegerField()
     sour_type = models.CharField(max_length=15)
-    resource_id = models.IntegerField(max_length=11)
+    resource_id = models.IntegerField()
     submit_data = models.CharField(max_length=2048)
     result_data = models.CharField(max_length=2048)
     creator = models.CharField(max_length=24)
@@ -34,7 +34,7 @@ class ResourceJira(models.Model):
 
 # 创建table：resource_env_base
 class ResourceEnvBase(models.Model):
-    base_id = models.IntegerField(max_length=11)
+    base_id = models.IntegerField()
     env = models.CharField(max_length=20)
     ip = models.CharField(max_length=16)
     creator = models.CharField(max_length=24)
@@ -52,13 +52,13 @@ class ResoureceModuleArchive(models.Model):
     resource_host = models.CharField(max_length=20)
     resource_http_port = models.CharField(max_length=8)
     module_domain = models.CharField(max_length=48)
-    https = models.IntegerField(max_length=1)
-    nginx = models.IntegerField(max_length=1)
-    namespace = models.IntegerField(max_length=1)
-    extend_port_num = models.IntegerField(max_length=1)
+    https = models.IntegerField()
+    nginx = models.IntegerField()
+    namespace = models.IntegerField()
+    extend_port_num = models.IntegerField()
     extend_data = models.CharField(max_length=1024)
     custom = models.CharField(max_length=2048)
-    status = models.IntegerField(max_length=1)
+    status = models.IntegerField()
 
     def __unicode__(self):
         return self.archive_id
