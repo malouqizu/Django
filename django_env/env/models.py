@@ -58,7 +58,7 @@ class ResoureceModuleArchive(models.Model):
     extend_port_num = models.IntegerField(max_length=1)
     extend_data = models.CharField(max_length=1024)
     custom = models.CharField(max_length=2048)
-    status = models.models.IntegerField(max_length=1)
+    status = models.IntegerField(max_length=1)
 
     def __unicode__(self):
         return self.archive_id
