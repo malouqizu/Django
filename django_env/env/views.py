@@ -13,7 +13,8 @@ def testdb(request):
     list1 = ResourceBase.objects.all()
     re = ResourceBase.objects.get(id=1)
     Log.info(type(ResourceBase.objects.get(id=1)))
-    Log.info('ResourceBase.objects.get(id=1):',re)
+    Log.info('ResourceBase.objects.get(id=1):')
+    Log.info(re)
     return HttpResponse(re)
 
 

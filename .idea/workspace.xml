@@ -37,7 +37,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="312" />
+          <entry key="py" value="321" />
           <entry key="read" value="60" />
           <entry key="yml" value="2" />
         </counts>
@@ -45,7 +45,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="60" />
-          <entry key="Python" value="312" />
+          <entry key="Python" value="321" />
           <entry key="YAML" value="2" />
         </counts>
       </usages-collector>
@@ -68,11 +68,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/django_env/env/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="14" column="48" selection-start-line="14" selection-start-column="48" selection-end-line="14" selection-end-column="48" />
+            <state relative-caret-position="480">
+              <caret line="16" column="15" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
               <folding>
                 <element signature="e#24#59#0" expanded="true" />
-                <marker date="1541645458824" expanded="true" signature="512:544" ph="..." />
+                <marker date="1541645622516" expanded="true" signature="526:558" ph="..." />
               </folding>
             </state>
           </provider>
@@ -504,11 +504,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/django_env/env/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="14" column="48" selection-start-line="14" selection-start-column="48" selection-end-line="14" selection-end-column="48" />
+        <state relative-caret-position="480">
+          <caret line="16" column="15" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
           <folding>
             <element signature="e#24#59#0" expanded="true" />
-            <marker date="1541645458824" expanded="true" signature="512:544" ph="..." />
+            <marker date="1541645622516" expanded="true" signature="526:558" ph="..." />
           </folding>
         </state>
       </provider>
