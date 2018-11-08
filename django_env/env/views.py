@@ -5,7 +5,7 @@ from env.models import ResourceEnvBase
 from env.models import ResourceJira
 from env.models import ResourceModuleArchive
 from django.http import HttpResponse
-from common.logger import Log
+from django_env.common.logger import Log
 
 # Create your views here.
 
