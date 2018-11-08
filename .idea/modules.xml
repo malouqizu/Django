@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://D:/QA/server_tools/AutoJira/.idea/AutoJira.iml" filepath="D:/QA/server_tools/AutoJira/.idea/AutoJira.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Django.iml" filepath="$PROJECT_DIR$/.idea/Django.iml" />
     </modules>
   </component>
