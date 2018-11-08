@@ -11,13 +11,14 @@ from __future__ import unicode_literals
 
 from django.db import models
 
+
 class DjangoMigrations(models.Model):
     app = models.CharField(max_length=255)
     name = models.CharField(max_length=255)
     applied = models.DateTimeField()
 
     class Meta:
-        # managed = False
+        managed = False
         db_table = 'django_migrations'
 
 
@@ -29,7 +30,7 @@ class ResourceBase(models.Model):
     is_valid = models.IntegerField()
 
     class Meta:
-        # managed = False
+        managed = False
         db_table = 'resource_base'
 
 
@@ -40,7 +41,7 @@ class ResourceEnvBase(models.Model):
     creator = models.CharField(max_length=24)
 
     class Meta:
-        # managed = False
+        managed = False
         db_table = 'resource_env_base'
         unique_together = (('base_id', 'env'),)
 
@@ -55,7 +56,7 @@ class ResourceJira(models.Model):
     creator = models.CharField(max_length=24)
 
     class Meta:
-        # managed = False
+        managed = False
         db_table = 'resource_jira'
 
 
@@ -74,6 +75,6 @@ class ResourceModuleArchive(models.Model):
     status = models.IntegerField()
 
     class Meta:
-        # managed = False
+        managed = False
         db_table = 'resource_module_archive'
         unique_together = (('archive_id', 'ip_flag'),)

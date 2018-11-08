@@ -1,0 +1,6 @@
+INFO:2018-11-08 11:11:19 /home/limengmeng/workspace/Django/django_env/env/views.py views testdb 15:  <class 'env.models.ResourceBase'>
+INFO:2018-11-08 11:11:19 /home/limengmeng/workspace/Django/django_env/env/views.py views testdb 16:  ResourceBase.objects.get(id=1):
+INFO:2018-11-08 11:11:19 /home/limengmeng/workspace/Django/django_env/env/views.py views testdb 17:  ResourceBase object
+INFO:2018-11-08 11:15:22 /home/limengmeng/workspace/Django/django_env/env/views.py views testdb 15:  <class 'env.models.ResourceBase'>
+INFO:2018-11-08 11:15:22 /home/limengmeng/workspace/Django/django_env/env/views.py views testdb 16:  ResourceBase.objects.get(id=1):
+INFO:2018-11-08 11:15:22 /home/limengmeng/workspace/Django/django_env/env/views.py views testdb 17:  ResourceBase object
