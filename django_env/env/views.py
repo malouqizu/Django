@@ -10,7 +10,8 @@ from django.http import HttpResponse
 
 def testdb(request):
     list1 = ResourceBase.objects.all()
-    return HttpResponse(list1)
+    re = ResourceBase.objects.get(id=1)
+    return HttpResponse(re)
 
 
 
