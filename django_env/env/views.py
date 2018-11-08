@@ -12,7 +12,6 @@ from common.logger import Log
 def testdb(request):
     list1 = ResourceBase.objects.all()
     re = ResourceBase.objects.get(id=1)
-    Log.info(ResourceBase.Meta.managed)
     Log.info(type(ResourceBase.objects.get(id=1)))
     Log.info('ResourceBase.objects.get(id=1):')
     Log.info(re)
