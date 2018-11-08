@@ -69,10 +69,10 @@
         <entry file="file://$PROJECT_DIR$/django_env/env/views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="480">
-              <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+              <caret line="16" column="12" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
               <folding>
                 <element signature="e#24#59#0" expanded="true" />
-                <marker date="1541645834903" expanded="true" signature="527:559" ph="..." />
+                <marker date="1541645949139" expanded="true" signature="526:558" ph="..." />
               </folding>
             </state>
           </provider>
@@ -505,10 +505,10 @@
     <entry file="file://$PROJECT_DIR$/django_env/env/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <caret line="16" column="12" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
           <folding>
             <element signature="e#24#59#0" expanded="true" />
-            <marker date="1541645834903" expanded="true" signature="527:559" ph="..." />
+            <marker date="1541645949139" expanded="true" signature="526:558" ph="..." />
           </folding>
         </state>
       </provider>

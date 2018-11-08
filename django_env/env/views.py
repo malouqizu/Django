@@ -14,7 +14,7 @@ def testdb(request):
     re = ResourceBase.objects.get(id=1)
     Log.info(type(ResourceBase.objects.get(id=1)))
     Log.info('ResourceBase.objects.get(id=1):')
-    Log.error(re)
+    Log.info(re)
     return HttpResponse(re)
 
 
