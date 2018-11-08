@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d84d810-a659-43b7-8150-f1a6bf688bbd" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/django_env/env/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_env/env/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,7 +24,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="log" value="3" />
-          <entry key="py" value="15" />
+          <entry key="py" value="16" />
           <entry key="read" value="2" />
           <entry key="yml" value="15" />
         </counts>
@@ -31,13 +32,13 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="PLAIN_TEXT" value="5" />
-          <entry key="Python" value="15" />
+          <entry key="Python" value="16" />
           <entry key="YAML" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="203" />
+          <entry key="py" value="235" />
           <entry key="read" value="60" />
           <entry key="yml" value="2" />
         </counts>
@@ -45,7 +46,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="60" />
-          <entry key="Python" value="203" />
+          <entry key="Python" value="235" />
           <entry key="YAML" value="2" />
         </counts>
       </usages-collector>
@@ -68,11 +69,23 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/django_env/env/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+            <state relative-caret-position="240">
+              <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
               <folding>
                 <element signature="e#24#59#0" expanded="true" />
-                <marker date="1541643898649" expanded="true" signature="345:389" ph="..." />
+                <marker date="1541644244589" expanded="true" signature="340:375" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/django_env/django_env/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+              <folding>
+                <element signature="e#563#604#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -456,11 +469,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/django_env/env/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+        <state relative-caret-position="240">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
           <folding>
             <element signature="e#24#59#0" expanded="true" />
-            <marker date="1541643898649" expanded="true" signature="345:389" ph="..." />
+            <marker date="1541644244589" expanded="true" signature="340:375" ph="..." />
           </folding>
         </state>
       </provider>
