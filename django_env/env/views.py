@@ -194,5 +194,7 @@ def testdb_delete_method1(request):
 
 def testdb_delete_method2(request):
     # 批量删除表记录
-    pass
+    ResourceEnvBase.objects.filter(creator='nike').delete()
+    return HttpResponse('删除多条表记录')
+
 
