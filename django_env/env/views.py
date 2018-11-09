@@ -33,7 +33,7 @@ def testdb(request):
     Log.info("resource_base = ResourceBase(base_type='redis', resource_data='i am resource_data', status=1, creator='lmm', is_valid=1)")
     Log.info(type(resource_base))
     Log.info("resource_base.save()")
-    return HttpResponse("向数据库ResourceBase表中插入3条数据")
+    return HttpResponse("向数据库env各表中插入数据")
 
 
 
