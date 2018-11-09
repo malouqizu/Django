@@ -127,7 +127,6 @@ def testdb_query_method1(request):
 
     for i in re1:
         Log.info(i.__dict__.items())
-        Log.info(end='')
         Log.info(i.id)
         Log.info(i.base_type)
         Log.info(i.resource_data)
@@ -135,6 +134,7 @@ def testdb_query_method1(request):
         Log.info(i.creator)
         Log.info(i.is_valid)
 
+    Log.info('\n')
     Log.info(re2[0].__dict__.items())
     Log.info(re2[0].id)
     Log.info(re2[0].base_id)
