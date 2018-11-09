@@ -76,7 +76,7 @@ def testdb_update_method1(request):
     t2.env = 'TEST'
     t2.save()
 
-    t3 = ResourceJira.objects.get(id=79)
+    t3 = ResourceJira.objects.get(res_type='Redis')
     t3.creator = 'nick'
     t3.submit_data = '10.10.10.10'
     t3.result_data = 'TEST'
