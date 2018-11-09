@@ -189,7 +189,7 @@ def testdb_update_method2(request):
 
 def testdb_delete_method1(request):
     # 删除单条表记录
-    ResourceEnvBase.objects.get(creator='nick').delete()
+    ResourceEnvBase.objects.get(creator='nike').delete()
     return HttpResponse('删除单条表记录')
 
 def testdb_delete_method2(request):
