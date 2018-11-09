@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d84d810-a659-43b7-8150-f1a6bf688bbd" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/django_env/django_env/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_env/django_env/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/django_env/env/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_env/env/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -37,7 +38,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="2153" />
+          <entry key="py" value="2229" />
           <entry key="read" value="60" />
           <entry key="yml" value="2" />
         </counts>
@@ -45,7 +46,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="60" />
-          <entry key="Python" value="2153" />
+          <entry key="Python" value="2229" />
           <entry key="YAML" value="2" />
         </counts>
       </usages-collector>
@@ -65,26 +66,27 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/django_env/env/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="575">
-              <caret line="169" column="27" selection-start-line="169" selection-start-column="27" selection-end-line="169" selection-end-column="27" />
+            <state relative-caret-position="2036">
+              <caret line="187" lean-forward="true" selection-start-line="187" selection-end-line="187" />
               <folding>
                 <element signature="e#24#59#0" expanded="true" />
-                <marker date="1541750089840" expanded="true" signature="2387:2392" ph="..." />
-                <marker date="1541750089840" expanded="true" signature="2387:3963" ph="..." />
-                <marker date="1541750089840" expanded="true" signature="5019:7220" ph="..." />
+                <marker date="1541750483552" expanded="true" signature="2387:2392" ph="..." />
+                <marker date="1541750483552" expanded="true" signature="2387:5915" ph="..." />
+                <marker date="1541750483552" expanded="true" signature="6971:7536" ph="..." />
+                <marker date="1541750483552" expanded="true" signature="7536:7540" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/django_env/django_env/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="596">
-              <caret line="25" column="60" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="60" />
+            <state relative-caret-position="626">
+              <caret line="26" column="60" selection-start-line="26" selection-start-column="60" selection-end-line="26" selection-end-column="60" />
               <folding>
                 <element signature="e#563#604#0" expanded="true" />
               </folding>
@@ -128,8 +130,8 @@
         <option value="$PROJECT_DIR$/django_env/env/models.py" />
         <option value="D:/QA/server_tools/AutoJira/main.py" />
         <option value="$PROJECT_DIR$/django_env/common/logger.py" />
-        <option value="$PROJECT_DIR$/django_env/django_env/urls.py" />
         <option value="$PROJECT_DIR$/django_env/env/views.py" />
+        <option value="$PROJECT_DIR$/django_env/django_env/urls.py" />
       </list>
     </option>
   </component>
@@ -481,12 +483,16 @@
     <entry file="file://$PROJECT_DIR$/django_env/env/admin.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/django_env/django_env/urls.py">
+    <entry file="file://$PROJECT_DIR$/django_env/env/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="596">
-          <caret line="25" column="60" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="60" />
+        <state relative-caret-position="2036">
+          <caret line="187" lean-forward="true" selection-start-line="187" selection-end-line="187" />
           <folding>
-            <element signature="e#563#604#0" expanded="true" />
+            <element signature="e#24#59#0" expanded="true" />
+            <marker date="1541750483552" expanded="true" signature="2387:2392" ph="..." />
+            <marker date="1541750483552" expanded="true" signature="2387:5915" ph="..." />
+            <marker date="1541750483552" expanded="true" signature="6971:7536" ph="..." />
+            <marker date="1541750483552" expanded="true" signature="7536:7540" ph="..." />
           </folding>
         </state>
       </provider>
@@ -501,15 +507,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/django_env/env/views.py">
+    <entry file="file://$PROJECT_DIR$/django_env/django_env/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="169" column="27" selection-start-line="169" selection-start-column="27" selection-end-line="169" selection-end-column="27" />
+        <state relative-caret-position="626">
+          <caret line="26" column="60" selection-start-line="26" selection-start-column="60" selection-end-line="26" selection-end-column="60" />
           <folding>
-            <element signature="e#24#59#0" expanded="true" />
-            <marker date="1541750089840" expanded="true" signature="2387:2392" ph="..." />
-            <marker date="1541750089840" expanded="true" signature="2387:3963" ph="..." />
-            <marker date="1541750089840" expanded="true" signature="5019:7220" ph="..." />
+            <element signature="e#563#604#0" expanded="true" />
           </folding>
         </state>
       </provider>
