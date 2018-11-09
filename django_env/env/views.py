@@ -122,6 +122,7 @@ def testdb_query_method1(request):
 
     for i in re1:
         Log.info(i.__dict__.items())
+        Log.info(end='')
         Log.info(i.id)
         Log.info(i.base_type)
         Log.info(i.resource_data)
