@@ -113,3 +113,22 @@ def testdb_update_method2(request):
 
     return HttpResponse('批量更新数据')
 
+def testdb_query_method1(request):
+    # 批量获取查询数据
+    ResourceBase.objects.filter(creator='nill')
+    ResourceEnvBase.objects.filter(creator='nill')
+    ResourceJira.objects.filter(creator='nill')
+    ResourceModuleArchive.objects.filter(extend_data= "/data0/www/htdocs")
+
+    Log.info(ResourceBase.objects.filter(creator='nill'))
+    Log.info(ResourceEnvBase.objects.filter(creator='nill'))
+    Log.info(ResourceJira.objects.filter(creator='nill'))
+    Log.info(ResourceModuleArchive.objects.filter(extend_data="/data0/www/htdocs"))
+
+    Log.info(type(ResourceBase.objects.filter(creator='nill')))
+    Log.info(type(ResourceEnvBase.objects.filter(creator='nill')))
+    Log.info(type(ResourceJira.objects.filter(creator='nill')))
+    Log.info(type(ResourceModuleArchive.objects.filter(extend_data= "/data0/www/htdocs")))
+
+    return HttpResponse('批量查询获取数据')
+
