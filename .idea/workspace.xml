@@ -37,7 +37,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="2363" />
+          <entry key="py" value="2364" />
           <entry key="read" value="60" />
           <entry key="yml" value="2" />
         </counts>
@@ -45,7 +45,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="60" />
-          <entry key="Python" value="2363" />
+          <entry key="Python" value="2364" />
           <entry key="YAML" value="2" />
         </counts>
       </usages-collector>
@@ -65,14 +65,14 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/django_env/env/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="780">
+              <caret line="26" column="4" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="4" />
               <folding>
                 <element signature="e#24#59#0" expanded="true" />
-                <marker date="1541752284581" expanded="true" signature="2387:2392" ph="..." />
-                <marker date="1541752284581" expanded="true" signature="2387:5196" ph="..." />
-                <marker date="1541752284581" expanded="true" signature="6252:6815" ph="..." />
-                <marker date="1541752284581" expanded="true" signature="6850:7104" ph="..." />
+                <marker date="1541752914578" expanded="true" signature="827:832" ph="..." />
+                <marker date="1541752914578" expanded="true" signature="827:1879" ph="..." />
+                <marker date="1541752914578" expanded="true" signature="2423:2707" ph="..." />
+                <marker date="1541752914578" expanded="true" signature="2742:2996" ph="..." />
               </folding>
             </state>
           </provider>
@@ -481,14 +481,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/django_env/env/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="780">
+          <caret line="26" column="4" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="4" />
           <folding>
             <element signature="e#24#59#0" expanded="true" />
-            <marker date="1541752284581" expanded="true" signature="2387:2392" ph="..." />
-            <marker date="1541752284581" expanded="true" signature="2387:5196" ph="..." />
-            <marker date="1541752284581" expanded="true" signature="6252:6815" ph="..." />
-            <marker date="1541752284581" expanded="true" signature="6850:7104" ph="..." />
+            <marker date="1541752914578" expanded="true" signature="827:832" ph="..." />
+            <marker date="1541752914578" expanded="true" signature="827:1879" ph="..." />
+            <marker date="1541752914578" expanded="true" signature="2423:2707" ph="..." />
+            <marker date="1541752914578" expanded="true" signature="2742:2996" ph="..." />
           </folding>
         </state>
       </provider>
