@@ -11,11 +11,11 @@ from common.logger import Log
 
 def testdb(request):
     list1 = ResourceBase.objects.all()
-    re = ResourceBase.objects.get(id=1)
-    Log.info(type(ResourceBase.objects.get(id=1)))
-    Log.info('ResourceBase.objects.get(id=1):')
-    Log.info(re)
-    return HttpResponse(re)
+    re = ResourceBase()
+    Log.info(type(ResourceBase()))
+    Log.info('re = ResourceBase()')
+    Log.info(re.objects.get(id=1))
+    return HttpResponse(re.objects.get(id=1))
 
 
 
