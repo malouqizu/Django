@@ -24,7 +24,7 @@ def testdb_add_method2(request):
 def testdb_add_method3(request):
     # 在表中批量插入多条数据
     ResourceBase_list_to_insert=[]
-    
+
     for i in range(10,20):
         ResourceBase_list_to_insert.append(ResourceBase(base_type='redis', resource_data='i am resource_data'+str(i), status=1, creator='lmm', is_valid=1))
 
@@ -72,7 +72,6 @@ def testdb_update_method1(request):
     创建时间，用来标识这条记录的创建时间，具有auto_now_add属性，创建记录时会自动填充当前时间到此字段
     修改时间，用来标识这条记录最后一次的修改时间，具有auto_now属性，当记录发生变化时填充当前时间到此字段
     '''
-
     t1 = ResourceBase.objects.get(id=79)
     t1.creator = 'nick'
     t1.resource_data = 'update resource data'
@@ -89,12 +88,12 @@ def testdb_update_method2(request):
 
 def testdb_delete_method1(request):
     # 删除单条表记录
-    ResourceEnvBase.objects.get(creator='nike').delete()
+    ResourceBase.objects.get(creator='nike').delete()
     return HttpResponse('删除单条表记录')
 
 def testdb_delete_method2(request):
     # 批量删除表记录
-    ResourceEnvBase.objects.filter(creator='lmm').delete()
+    ResourceBase.objects.filter(creator='lmm').delete()
     return HttpResponse('删除多条表记录')
 
 
