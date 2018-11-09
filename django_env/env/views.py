@@ -115,6 +115,11 @@ def testdb_update_method2(request):
 
 def testdb_query_method1(request):
     # 批量获取查询数据
+    '''
+    获取到的是一个django.db.models.query.QuerySet，包含了查询到表中匹配到的记录，每个记录用一个对象表示，每个字段是这个对象值
+    :param request:
+    :return:
+    '''
     re1 = ResourceBase.objects.filter(id=82)
     re2 = ResourceEnvBase.objects.filter(creator='nill')
     re3 = ResourceJira.objects.filter(creator='nill')
@@ -129,6 +134,13 @@ def testdb_query_method1(request):
         Log.info(i.status)
         Log.info(i.creator)
         Log.info(i.is_valid)
+
+    Log.info(re2[0].__dict__.items())
+    Log.info(re2[0].id)
+    Log.info(re2[0].base_id)
+    Log.info(re2[0].env)
+    Log.info(re2[0].ip)
+    Log.info(re2[0].creator)
 
     return HttpResponse('批量查询获取数据')
 
