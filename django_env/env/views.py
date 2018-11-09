@@ -14,14 +14,14 @@ def testdb_add_method1(request):
     resource_base = ResourceBase(base_type='redis', resource_data='i am resource_data', status=1, creator='lmm', is_valid=1)
     resource_base.save()
 
-    resource_env_base = ResourceEnvBase(base_id=1, env='test5', ip='10.26.14.5', creator='lmm')
+    resource_env_base = ResourceEnvBase(base_id=1, env='test7', ip='10.26.14.7', creator='lmm')
     resource_env_base.save()
 
-    resource_jira = ResourceJira(jira_id=2365, jira_status=1, res_type='Redis', resource_id=2333,
+    resource_jira = ResourceJira(jira_id=2368, jira_status=1, res_type='Redis', resource_id=2338,
                                  submit_data='redis submit data', result_data='redis result data', creator='lmm')
     resource_jira.save()
 
-    resource_module_archive = ResourceModuleArchive(archive_id='333', ip_flag='10.26.14.33', resource_host='10.26.14.33',
+    resource_module_archive = ResourceModuleArchive(archive_id='337', ip_flag='10.26.14.37', resource_host='10.26.14.37',
                                                     resource_http_port='8000', module_domain='test3-i.bk-house-api.ke.com',
                                                     https=1, nginx=1, namespace=0, extend_port_num=0, extend_data='/public',
                                                     custom='need custom data', status=1)

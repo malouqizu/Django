@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d84d810-a659-43b7-8150-f1a6bf688bbd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/django_env/django_env/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_env/django_env/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/django_env/env/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_env/env/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,7 +37,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="931" />
+          <entry key="py" value="938" />
           <entry key="read" value="60" />
           <entry key="yml" value="2" />
         </counts>
@@ -46,7 +45,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="60" />
-          <entry key="Python" value="931" />
+          <entry key="Python" value="938" />
           <entry key="YAML" value="2" />
         </counts>
       </usages-collector>
@@ -66,20 +65,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/django_env/env/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="206">
-              <caret line="11" column="22" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="22" />
+            <state relative-caret-position="566">
+              <caret line="23" column="119" selection-start-line="23" selection-start-column="119" selection-end-line="23" selection-end-column="119" />
               <folding>
                 <element signature="e#24#59#0" expanded="true" />
-                <marker date="1541731765483" expanded="true" signature="2356:2358" ph="..." />
+                <marker date="1541731959883" expanded="true" signature="2356:2358" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/django_env/django_env/urls.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="690">
@@ -127,8 +126,8 @@
         <option value="$PROJECT_DIR$/django_env/env/models.py" />
         <option value="D:/QA/server_tools/AutoJira/main.py" />
         <option value="$PROJECT_DIR$/django_env/common/logger.py" />
-        <option value="$PROJECT_DIR$/django_env/env/views.py" />
         <option value="$PROJECT_DIR$/django_env/django_env/urls.py" />
+        <option value="$PROJECT_DIR$/django_env/env/views.py" />
       </list>
     </option>
   </component>
@@ -480,17 +479,6 @@
     <entry file="file://$PROJECT_DIR$/django_env/env/admin.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/django_env/env/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="11" column="22" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="22" />
-          <folding>
-            <element signature="e#24#59#0" expanded="true" />
-            <marker date="1541731765483" expanded="true" signature="2356:2358" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/django_env/env/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="446">
@@ -507,6 +495,17 @@
           <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
           <folding>
             <element signature="e#563#604#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_env/env/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="566">
+          <caret line="23" column="119" selection-start-line="23" selection-start-column="119" selection-end-line="23" selection-end-column="119" />
+          <folding>
+            <element signature="e#24#59#0" expanded="true" />
+            <marker date="1541731959883" expanded="true" signature="2356:2358" ph="..." />
           </folding>
         </state>
       </provider>
