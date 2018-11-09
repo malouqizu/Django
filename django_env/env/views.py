@@ -11,7 +11,7 @@ from common.logger import Log
 
 def testdb(request):
     list1 = ResourceBase.objects.all()
-    resource_base = ResourceBase(base_type='redis')
+    resource_base = ResourceBase(base_type='redis', resource_data='i am resource_data', status=1)
     resource_base.save()
     Log.info(type(resource_base))
     Log.info("resource_base.save()")
