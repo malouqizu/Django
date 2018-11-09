@@ -45,7 +45,7 @@ def testdb_add_method3(request):
     ResourceJira_list_to_insert=[]
     ResourceModuleArchive_list_to_insert=[]
 
-    for i in range(10):
+    for i in range(10,20):
         ResourceBase_list_to_insert.append(ResourceBase(base_type='redis', resource_data='i am resource_data'+str(i), status=1, creator='lmm', is_valid=1))
         ResourceEnvBase_list_to_insert.append(ResourceEnvBase(base_id=9 + i, env='test' + str(7 + i), ip='10.26.14.' + str(4 + i), creator='lmm'))
         ResourceJira_list_to_insert.append(ResourceJira(jira_id=2369+i, jira_status=1, res_type='Redis', resource_id=2337+i,
@@ -194,7 +194,7 @@ def testdb_delete_method1(request):
 
 def testdb_delete_method2(request):
     # 批量删除表记录
-    ResourceEnvBase.objects.filter(creator='nike').delete()
+    ResourceEnvBase.objects.filter(creator='nill').delete()
     return HttpResponse('删除多条表记录')
 
 
