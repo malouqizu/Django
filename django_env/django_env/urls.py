@@ -18,5 +18,6 @@ from env import views
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^$', views.testdb),
+    url(r'^testdb_add_method1', views.testdb_add_method1),
+    url(r'^testdb_add_method2', views.testdb_add_method2),
 ]
