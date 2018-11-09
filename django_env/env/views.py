@@ -65,10 +65,28 @@ def testdb_add_method3(request):
 
 def testdb_update_method1(request):
     # 更新一条数据，也只能更新一条数据
-    t = ResourceBase.objects.get(id=79)
-    t.creator = 'nick'
-    t.ip = '10.10.10.10'
-    t.save()
+    t1 = ResourceBase.objects.get(id=79)
+    t1.creator = 'nick'
+    t1.resource_data = 'update resource data'
+    t1.save()
+
+    t2 = ResourceEnvBase.objects.get(id=79)
+    t2.creator = 'nick'
+    t2.ip = '10.10.10.10'
+    t2.env = 'TEST'
+    t2.save()
+
+    t3 = ResourceJira.objects.get(id=79)
+    t3.creator = 'nick'
+    t3.submit_data = '10.10.10.10'
+    t3.result_data = 'TEST'
+    t3.save()
+
+    t4 = ResourceModuleArchive.objects.get(id=79)
+    t4.creator = 'nick'
+    t4.module_domain = '10.10.10.10'
+    t4.extend_port_num = '3'
+    t4.save()
 
     return HttpResponse('更新一条数据，也只能更新一条数据')
 
