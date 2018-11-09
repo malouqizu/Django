@@ -17,7 +17,7 @@ def testdb(request):
     resource_base = ResourceBase(base_type='kafka', resource_data='i am resource_kafka', status=1, creator='lmm',is_valid=1)
     resource_base.save()
 
-    resource_env_base = ResourceEnvBase(base_id=1, env='test3', ip='10.26.14.3', creator='lmm')
+    resource_env_base = ResourceEnvBase(base_id=1, env='test5', ip='10.26.14.5', creator='lmm')
     resource_env_base.save()
 
     resource_jira = ResourceJira(jira_id=2365, jira_status=1, res_type='Redis', resource_id=2333,
