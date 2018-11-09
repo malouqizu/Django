@@ -121,9 +121,12 @@ def testdb_query_method1(request):
     re4 = ResourceModuleArchive.objects.filter(extend_data= "/data0/www/htdocs")
 
     for i in re1:
+        Log.info(i.id)
         Log.info(i.base_type)
-
-
+        Log.info(i.resource_data)
+        Log.info(i.status)
+        Log.info(i.creator)
+        Log.info(i.is_valid)
 
     return HttpResponse('批量查询获取数据')
 
