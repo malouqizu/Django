@@ -122,7 +122,7 @@ def testdb_query_method1(request):
 
     for i in re1:
         Log.info(i)
-        Log.info(i.creator)
+        Log.info(i.__dict__.items())
 
     Log.info(ResourceBase.objects.filter(creator='nill'))
     Log.info('\n')

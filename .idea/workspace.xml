@@ -69,12 +69,12 @@
         <entry file="file://$PROJECT_DIR$/django_env/env/views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="365">
-              <caret line="124" column="26" selection-start-line="124" selection-start-column="26" selection-end-line="124" selection-end-column="26" />
+              <caret line="124" column="35" selection-start-line="124" selection-start-column="35" selection-end-line="124" selection-end-column="35" />
               <folding>
                 <element signature="e#24#59#0" expanded="true" />
-                <marker date="1541747323437" expanded="true" signature="2387:2392" ph="..." />
-                <marker date="1541747323437" expanded="true" signature="2387:3963" ph="..." />
-                <marker date="1541747323437" expanded="true" signature="5019:6609" ph="..." />
+                <marker date="1541747453963" expanded="true" signature="2387:2392" ph="..." />
+                <marker date="1541747453963" expanded="true" signature="2387:3963" ph="..." />
+                <marker date="1541747453963" expanded="true" signature="5019:6618" ph="..." />
               </folding>
             </state>
           </provider>
@@ -504,12 +504,12 @@
     <entry file="file://$PROJECT_DIR$/django_env/env/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="365">
-          <caret line="124" column="26" selection-start-line="124" selection-start-column="26" selection-end-line="124" selection-end-column="26" />
+          <caret line="124" column="35" selection-start-line="124" selection-start-column="35" selection-end-line="124" selection-end-column="35" />
           <folding>
             <element signature="e#24#59#0" expanded="true" />
-            <marker date="1541747323437" expanded="true" signature="2387:2392" ph="..." />
-            <marker date="1541747323437" expanded="true" signature="2387:3963" ph="..." />
-            <marker date="1541747323437" expanded="true" signature="5019:6609" ph="..." />
+            <marker date="1541747453963" expanded="true" signature="2387:2392" ph="..." />
+            <marker date="1541747453963" expanded="true" signature="2387:3963" ph="..." />
+            <marker date="1541747453963" expanded="true" signature="5019:6618" ph="..." />
           </folding>
         </state>
       </provider>
