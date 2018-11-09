@@ -121,9 +121,13 @@ def testdb_query_method1(request):
     ResourceModuleArchive.objects.filter(extend_data= "/data0/www/htdocs")
 
     Log.info(ResourceBase.objects.filter(creator='nill'))
+    Log.info('\n')
     Log.info(ResourceEnvBase.objects.filter(creator='nill'))
+    Log.info('\n')
     Log.info(ResourceJira.objects.filter(creator='nill'))
+    Log.info('\n')
     Log.info(ResourceModuleArchive.objects.filter(extend_data="/data0/www/htdocs"))
+    Log.info('\n')
 
     Log.info(type(ResourceBase.objects.filter(creator='nill')))
     Log.info(type(ResourceEnvBase.objects.filter(creator='nill')))
