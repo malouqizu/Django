@@ -65,6 +65,18 @@ def testdb_add_method3(request):
 
 def testdb_update_method1(request):
     # 更新一条数据，也只能更新一条数据
+    # objects.get(id=79) 此方法的参数值在数据库中必须的唯一的，如果有重复数据时就会报错
+    '''
+    https://www.jb51.net/article/144322.htm
+    具有auto_now属性字段的更新
+    我们通常会给表添加三个默认字段
+    自增ID，这个django已经默认加了，就像上边的建表语句，虽然只写了username和is_active两个字段，但表建好后也会有一个默认的自增id字段
+    创建时间，用来标识这条记录的创建时间，具有auto_now_add属性，创建记录时会自动填充当前时间到此字段
+    修改时间，用来标识这条记录最后一次的修改时间，具有auto_now属性，当记录发生变化时填充当前时间到此字段
+    :param request: 
+    :return: 
+    '''
+
     t1 = ResourceBase.objects.get(id=79)
     t1.creator = 'nick'
     t1.resource_data = 'update resource data'
@@ -76,11 +88,12 @@ def testdb_update_method1(request):
     t2.env = 'TEST'
     t2.save()
 
-    t3 = ResourceJira.objects.get(res_type='Redis')
-    t3.creator = 'nick'
-    t3.submit_data = '10.10.10.10'
-    t3.result_data = 'TEST'
-    t3.save()
+    # res_type的值不唯一，所以报错
+    # t3 = ResourceJira.objects.get(res_type='Redis')
+    # t3.creator = 'nick'
+    # t3.submit_data = '10.10.10.10'
+    # t3.result_data = 'TEST'
+    # t3.save()
 
     t4 = ResourceModuleArchive.objects.get(id=100033)
     t4.creator = 'nick'
@@ -89,4 +102,14 @@ def testdb_update_method1(request):
     t4.save()
 
     return HttpResponse('更新一条数据，也只能更新一条数据')
+
+def testdb_update_method2(request):
+    # 批量更新数据
+    # 类似于mysql语句 update resource_base set username='nick' where id = 1
+    ResourceBase.objects.filter(creator='lmm').update(creator='nill', is_valid=2)
+    ResourceEnvBase.objects.filter(creator='lmm').update(creator='nill', ip='10.26.16.22')
+    ResourceJira.objects.filter(creator='lmm').update(creator='nill', res_type='db')
+    ResourceModuleArchive.objects.filter(extend_data='/public').update(extend_data= "/data0/www/htdocs")
+
+    return HttpResponse('批量更新数据')
 

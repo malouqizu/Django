@@ -22,4 +22,5 @@ urlpatterns = [
     url(r'^testdb_add_method2', views.testdb_add_method2),
     url(r'^testdb_add_method3', views.testdb_add_method3),
     url(r'^testdb_update_method1', views.testdb_update_method1),
+    url(r'^testdb_update_method2', views.testdb_update_method2),
 ]
