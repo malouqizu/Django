@@ -82,7 +82,7 @@ def testdb_update_method1(request):
     t3.result_data = 'TEST'
     t3.save()
 
-    t4 = ResourceModuleArchive.objects.get(id=79)
+    t4 = ResourceModuleArchive.objects.get(id=100033)
     t4.creator = 'nick'
     t4.module_domain = '10.10.10.10'
     t4.extend_port_num = '3'
