@@ -18,13 +18,9 @@ from env import views
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^testdb_add_method1', views.testdb_add_method1),
-    url(r'^testdb_add_method2', views.testdb_add_method2),
-    url(r'^testdb_add_method3', views.testdb_add_method3),
-    url(r'^testdb_update_method1', views.testdb_update_method1),
-    url(r'^testdb_update_method2', views.testdb_update_method2),
-    url(r'^testdb_query_method1', views.testdb_query_method1),
-    url(r'^testdb_query_method2', views.testdb_query_method2),
-    url(r'^testdb_delete_method1', views.testdb_delete_method1),
-    url(r'^testdb_delete_method2', views.testdb_delete_method2),
+    url(r'^testdb_add_method', views.testdb_add_method),
+    url(r'^testdb_update_method', views.testdb_update_method),
+    url(r'^testdb_query_method', views.testdb_query_method),
+    url(r'^testdb_delete_method', views.testdb_delete_method),
+
 ]

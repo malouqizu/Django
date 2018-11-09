@@ -1,38 +1,32 @@
 # -*- coding: utf-8 -*-
-from django.shortcuts import render
 from env.models import ResourceBase
-from env.models import ResourceEnvBase
-from env.models import ResourceJira
-from env.models import ResourceModuleArchive
 from django.http import HttpResponse
 from common.logger import Log
 
 # Create your views here.
 
-def testdb_add_method1(request):
+def testdb_add_method(request):
     # 先创建对象实例，然后保存数据
     ResourceBase(base_type='redis', resource_data='i am resource_data', status=1, creator='lmm', is_valid=1).save()
 
-    return HttpResponse("(先创建对象实例，然后保存数据)向数据库env各表中插入数据")
-
-def testdb_add_method2(request):
     # 创建对象，并同时保存对象的快捷方法，存在关系字段时无法使用此方法
-    ResourceBase.objects.create(base_type='redis', resource_data='i am resource_data', status=1, creator='lmm', is_valid=1)
+    ResourceBase.objects.create(base_type='redis', resource_data='i am resource_data', status=1, creator='lmm',
+                                is_valid=1)
 
-    return HttpResponse("(创建对象，并同时保存对象)向数据库env各表中插入数据")
-
-def testdb_add_method3(request):
     # 在表中批量插入多条数据
-    ResourceBase_list_to_insert=[]
+    ResourceBase_list_to_insert = []
 
-    for i in range(10,20):
-        ResourceBase_list_to_insert.append(ResourceBase(base_type='redis', resource_data='i am resource_data'+str(i), status=1, creator='lmm', is_valid=1))
+    for i in range(10, 20):
+        ResourceBase_list_to_insert.append(
+            ResourceBase(base_type='redis', resource_data='i am resource_data' + str(i), status=1, creator='lmm',
+                         is_valid=1))
 
     ResourceBase.objects.bulk_create(ResourceBase_list_to_insert)
 
-    return HttpResponse('批量插入多条数据')
+    return HttpResponse("插入表记录")
 
-def testdb_query_method1(request):
+
+def testdb_query_method(request):
     # 批量获取查询数据
     '''
     objects.all()
@@ -40,7 +34,6 @@ def testdb_query_method1(request):
     获取到的是一个django.db.models.query.QuerySet，包含了查询到表中匹配到的记录，每个记录用一个对象表示，每个字段是这个对象值
     '''
     re1 = ResourceBase.objects.filter(id=82)
-
     for i in re1:
         Log.info(i.__dict__.items())
         Log.info(i.id)
@@ -50,18 +43,16 @@ def testdb_query_method1(request):
         Log.info(i.creator)
         Log.info(i.is_valid)
 
-    return HttpResponse('批量查询获取数据')
-
-def testdb_query_method2(request):
     # 只获取单条数据
     # objects.get()
     t1 = ResourceBase.objects.get(id=79)
     Log.info(t1.creator)
     Log.info(t1.resource_data)
 
-    return HttpResponse('获取单条查询数据')
+    return HttpResponse('查询表记录')
 
-def testdb_update_method1(request):
+
+def testdb_update_method(request):
     # 更新一条数据，也只能更新一条数据
     # objects.get(id=79) 此方法的参数值在数据库中必须的唯一的，如果有重复数据时就会报错
     '''
@@ -77,24 +68,22 @@ def testdb_update_method1(request):
     t1.resource_data = 'update resource data'
     t1.save()
 
-    return HttpResponse('更新一条数据，也只能更新一条数据')
-
-def testdb_update_method2(request):
     # 批量更新数据
     # 类似于mysql语句 update resource_base set username='nick' where id = 1
     ResourceBase.objects.filter(creator='lmm').update(creator='nill', is_valid=2)
 
-    return HttpResponse('批量更新数据')
+    return HttpResponse('更新表记录')
 
-def testdb_delete_method1(request):
+
+def testdb_delete_method(request):
     # 删除单条表记录
     ResourceBase.objects.get(creator='nike').delete()
-    return HttpResponse('删除单条表记录')
 
-def testdb_delete_method2(request):
     # 批量删除表记录
     ResourceBase.objects.filter(creator='lmm').delete()
     ResourceBase.objects.filter(creator='nill').delete()
-    return HttpResponse('删除多条表记录')
+
+    return HttpResponse('删除表记录')
+
 
 
