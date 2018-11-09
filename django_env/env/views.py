@@ -115,28 +115,15 @@ def testdb_update_method2(request):
 
 def testdb_query_method1(request):
     # 批量获取查询数据
-    re1 = ResourceBase.objects.filter(creator='nill')
+    re1 = ResourceBase.objects.filter(id=82)
     re2 = ResourceEnvBase.objects.filter(creator='nill')
     re3 = ResourceJira.objects.filter(creator='nill')
     re4 = ResourceModuleArchive.objects.filter(extend_data= "/data0/www/htdocs")
 
     for i in re1:
-        Log.info(i)
-        Log.info(i.__dict__.items())
+        Log.info(i.id)
 
-    Log.info(ResourceBase.objects.filter(creator='nill'))
-    Log.info('\n')
-    Log.info(ResourceEnvBase.objects.filter(creator='nill'))
-    Log.info('\n')
-    Log.info(ResourceJira.objects.filter(creator='nill'))
-    Log.info('\n')
-    Log.info(ResourceModuleArchive.objects.filter(extend_data="/data0/www/htdocs"))
-    Log.info('\n')
 
-    Log.info(type(ResourceBase.objects.filter(creator='nill')))
-    Log.info(type(ResourceEnvBase.objects.filter(creator='nill')))
-    Log.info(type(ResourceJira.objects.filter(creator='nill')))
-    Log.info(type(ResourceModuleArchive.objects.filter(extend_data= "/data0/www/htdocs")))
 
     return HttpResponse('批量查询获取数据')
 
