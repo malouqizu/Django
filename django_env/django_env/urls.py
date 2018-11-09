@@ -20,4 +20,5 @@ urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'^testdb_add_method1', views.testdb_add_method1),
     url(r'^testdb_add_method2', views.testdb_add_method2),
+    url(r'^testdb_add_method3', views.testdb_add_method3),
 ]

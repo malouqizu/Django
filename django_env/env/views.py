@@ -41,3 +41,29 @@ def testdb_add_method2(request):
                          custom='need custom data', status=1)
     return HttpResponse("(创建对象，并同时保存对象)向数据库env各表中插入数据")
 
+
+def testdb_add_method3(request):
+    # 在表中批量插入多条数据
+    ResourceBase_list_to_insert=[]
+    ResourceEnvBase_list_to_insert=[]
+    ResourceJira_list_to_insert=[]
+    ResourceModuleArchive_list_to_insert=[]
+
+    for i in range(10):
+        ResourceBase_list_to_insert.append(ResourceBase(base_type='redis', resource_data='i am resource_data'+str(i), status=1, creator='lmm', is_valid=1))
+        ResourceEnvBase_list_to_insert.append(ResourceEnvBase(base_id=2 + i, env='test' + str(7 + i), ip='10.26.14.' + str(4 + i), creator='lmm'))
+        ResourceJira_list_to_insert.append(ResourceJira(jira_id=2367+i, jira_status=1, res_type='Redis', resource_id=2337+i,
+                                 submit_data='redis submit data', result_data='redis result data', creator='lmm'))
+        ResourceModuleArchive_list_to_insert.append(ResourceModuleArchive(archive_id='336'+str(i), ip_flag='10.26.14.3'+str(6+i),
+                                                                          resource_host='10.26.14.3'+str(6+i),
+                         resource_http_port='8000', module_domain='test'+str(4+i)+'-i.bk-house-api.ke.com',
+                         https=1, nginx=1, namespace=0, extend_port_num=0, extend_data='/public',
+                         custom='need custom data', status=1))
+
+    ResourceBase.objects.bulk_create(ResourceBase_list_to_insert)
+    ResourceEnvBase.objects.bulk_create(ResourceEnvBase_list_to_insert)
+    ResourceJira.objects.bulk_create(ResourceJira_list_to_insert)
+    ResourceModuleArchive.objects.bulk_create(ResourceModuleArchive_list_to_insert)
+
+    return HttpResponse('批量插入多条数据')
+
