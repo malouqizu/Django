@@ -94,6 +94,7 @@ def testdb_delete_method1(request):
 def testdb_delete_method2(request):
     # 批量删除表记录
     ResourceBase.objects.filter(creator='lmm').delete()
+    ResourceBase.objects.filter(creator='nill').delete()
     return HttpResponse('删除多条表记录')
 
 
