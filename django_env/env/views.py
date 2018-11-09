@@ -66,6 +66,8 @@ def testdb_add_method3(request):
 def testdb_query_method1(request):
     # 批量获取查询数据
     '''
+    objects.all()
+    objects.filter(id=82)
     获取到的是一个django.db.models.query.QuerySet，包含了查询到表中匹配到的记录，每个记录用一个对象表示，每个字段是这个对象值
     :param request:
     :return:
@@ -179,13 +181,18 @@ def testdb_update_method2(request):
     # 批量更新数据
     # 类似于mysql语句 update resource_base set username='nick' where id = 1
     ResourceBase.objects.filter(creator='lmm').update(creator='nill', is_valid=2)
-    ResourceEnvBase.objects.filter(creator='lmm').update(creator='nill', ip='10.26.16.22')
+    ResourceEnvBase.objects.filter(env='test9').update(creator='nike', ip='10.26.16.22')
     ResourceJira.objects.filter(creator='lmm').update(creator='nill', res_type='db')
     ResourceModuleArchive.objects.filter(extend_data='/public').update(extend_data= "/data0/www/htdocs")
 
     return HttpResponse('批量更新数据')
 
+def testdb_delete_method1(request):
+    # 删除单条表记录
+    ResourceEnvBase.objects.get(creator='nick').delete()
+    return HttpResponse('删除单条表记录')
 
-
-
+def testdb_delete_method2(request):
+    # 批量删除表记录
+    pass
 
