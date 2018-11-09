@@ -11,11 +11,12 @@ from common.logger import Log
 
 def testdb(request):
     list1 = ResourceBase.objects.all()
-    re = ResourceBase()
-    Log.info(type(ResourceBase()))
-    Log.info('re = ResourceBase()')
-    Log.info(re.objects.get(id=1))
-    return HttpResponse(re.objects.get(id=1))
+    resource_base = ResourceBase(base_type='redis')
+    resource_base.save()
+    Log.info(type(resource_base))
+    Log.info("resource_base.save()")
+    Log.info("resource_base = ResourceBase(base_type='redis')")
+    return HttpResponse("向数据库ResourceBase表中插入一条数据")
 
 
 
