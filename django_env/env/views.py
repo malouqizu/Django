@@ -94,33 +94,6 @@ def testdb_query_method1(request):
     Log.info(re2[0].ip)
     Log.info(re2[0].creator)
 
-    Log.info('\n')
-    Log.info(re3[0].__dict__.items())
-    Log.info(re3[0].id)
-    Log.info(re3[0].jira_id)
-    Log.info(re3[0].jira_status)
-    Log.info(re3[0].res_type)
-    Log.info(re3[0].resource_id)
-    Log.info(re3[0].submit_data)
-    Log.info(re3[0].result_data)
-    Log.info(re3[0].creator)
-
-    Log.info('\n')
-    Log.info(re4[0].__dict__.items())
-    Log.info(re4[0].id)
-    Log.info(re4[0].archive_id)
-    Log.info(re4[0].ip_flag)
-    Log.info(re4[0].resource_host)
-    Log.info(re4[0].resource_http_port)
-    Log.info(re4[0].module_domain)
-    Log.info(re4[0].https)
-    Log.info(re4[0].nginx)
-    Log.info(re4[0].namespace)
-    Log.info(re4[0].extend_port_num)
-    Log.info(re4[0].extend_data)
-    Log.info(re4[0].custom)
-    Log.info(re4[0].status)
-
     return HttpResponse('批量查询获取数据')
 
 def testdb_query_method2(request):
