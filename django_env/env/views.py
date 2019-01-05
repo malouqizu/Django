@@ -5,6 +5,9 @@ from common.logger import Log
 
 # Create your views here.
 
+def hello(request):
+    return HttpResponse("hello word")
+
 def testdb_add_method(request):
     # 先创建对象实例，然后保存数据
     ResourceBase(base_type='redis', resource_data='i am resource_data', status=1, creator='lmm', is_valid=1).save()

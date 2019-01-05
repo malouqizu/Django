@@ -1,0 +1,9 @@
+django框架学习步骤
+1、Django库安装
+pip2.7 install Django==1.8.16
+find / -name 'django-admin*' （查找Django安装位置）
+/usr/lib/python2.7/site-packages/django
+
+2、创建Django项目djst
+django-admin startproject djst
+

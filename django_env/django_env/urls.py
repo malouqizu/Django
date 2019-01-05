@@ -22,5 +22,5 @@ urlpatterns = [
     url(r'^testdb_update_method', views.testdb_update_method),
     url(r'^testdb_query_method', views.testdb_query_method),
     url(r'^testdb_delete_method', views.testdb_delete_method),
-
+    url(r'^hello', views.hello),
 ]
