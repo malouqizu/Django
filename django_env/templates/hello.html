@@ -13,8 +13,16 @@
     <h1>使用模板写死数据</h1>
 {% endif %}
 
-{% if not kkk %}
+{% if kkk %}
     <h1>使用模板写死数据kkk</h1>
+{% endif %}
+
+{% if hello and kong %}
+   <h1>if hello and kong</h1>
+{% endif %}
+
+{% if hello or kong %}
+   <h1>if hello or kong</h1>
 {% endif %}
 
 </body>
