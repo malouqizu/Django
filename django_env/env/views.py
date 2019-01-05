@@ -1,12 +1,16 @@
 # -*- coding: utf-8 -*-
 from env.models import ResourceBase
 from django.http import HttpResponse
+from django.shortcuts import render
+
 from common.logger import Log
 
 # Create your views here.
 
 def hello(request):
-    return HttpResponse("hello word")
+    context = {}
+    context['hello'] = "hello world"
+    return render(request, 'hello.html', context)
 
 def testdb_add_method(request):
     # 先创建对象实例，然后保存数据
