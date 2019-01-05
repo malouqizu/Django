@@ -13,6 +13,17 @@ def hello(request):
     context['usa'] = 'usa'
     return render(request, 'hello.html', context)
 
+def add(request):
+    a = request.GET['a']
+    b = request.GET['b']
+    c = int(a) + int(b)
+    return HttpResponse(str(c))
+
+def add2(request,a,b):
+    c = int(a) + int(b)
+    return HttpResponse(str(c))
+
+
 def testdb_add_method(request):
     # 先创建对象实例，然后保存数据
     ResourceBase(base_type='redis', resource_data='i am resource_data', status=1, creator='lmm', is_valid=1).save()
