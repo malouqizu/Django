@@ -10,6 +10,7 @@ from common.logger import Log
 def hello(request):
     context = {}
     context['hello'] = "hello world"
+    context['kong'] = ""
     return render(request, 'hello.html', context)
 
 def testdb_add_method(request):
