@@ -5,7 +5,8 @@ project_port=8000
 
 #项目路径
 script_path=$(cd `dirname $0`; pwd)
-project_path=$(cd $script_path; cd ..; pwd)
+project_path=$(cd $script_path; pwd)
+echo "scriptpath is:"script_path
 echo "projectpath is:"$project_path
 
 #环境变量
