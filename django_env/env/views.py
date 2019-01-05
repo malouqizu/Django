@@ -9,9 +9,8 @@ from common.logger import Log
 
 def hello(request):
     context = {}
-    context['中国'] = "中国"
-    context['美国'] = '美国'
-    list1= ['中国', '美国', '加拿大']
+    context['china'] = "中国"
+    context['usa'] = '美国'
     return render(request, 'hello.html', context)
 
 def testdb_add_method(request):

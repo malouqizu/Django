@@ -5,15 +5,13 @@
     <title>Title</title>
 </head>
 <body>
-{% if hello %}
-    <h1>{{ hello }}</h1>
+{% if china %}
+    <h1>{{ hello | upper}}</h1>
 {% endif %}
 
-<ul>
-{% for l in list1 %}
-    <li>{{ l }}</li>
-{% endfor %}
-</ul>>
+{% if usa %}
+    <h1>{{ usa | first | upper }}</h1>
+{% endif %}
 
 </body>
 </html>
