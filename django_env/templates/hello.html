@@ -5,25 +5,15 @@
     <title>Title</title>
 </head>
 <body>
-{% if not hello %}
+{% if hello %}
     <h1>{{ hello }}</h1>
 {% endif %}
 
-{% if not kong %}
-    <h1>使用模板写死数据</h1>
-{% endif %}
-
-{% if kkk %}
-    <h1>使用模板写死数据kkk</h1>
-{% endif %}
-
-{% if hello and kong %}
-   <h1>if hello and kong</h1>
-{% endif %}
-
-{% if hello or kong %}
-   <h1>if hello or kong</h1>
-{% endif %}
+<ul>
+{% for l in list1 %}
+    <li>{{ athlete.name }}</li>
+{% endfor %}
+</ul>>
 
 </body>
 </html>

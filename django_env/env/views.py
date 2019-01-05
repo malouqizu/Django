@@ -10,8 +10,8 @@ from common.logger import Log
 def hello(request):
     context = {}
     context['hello'] = "hello world"
-    context['kong'] = ""
-    return render(request, 'hello.html', context)
+    list1= ['中国', '美国', '加拿大']
+    return render(request, 'hello.html', context, list1)
 
 def testdb_add_method(request):
     # 先创建对象实例，然后保存数据
